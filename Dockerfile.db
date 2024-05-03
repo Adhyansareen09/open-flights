@@ -1,0 +1,10 @@
+# Use an official PostgreSQL image as the base image
+FROM postgres:13.3
+
+# Set environment variables
+ENV POSTGRES_USER=user \
+    POSTGRES_PASSWORD=password \
+    POSTGRES_DB=open_flights_production
+
+# Expose the PostgreSQL port
+EXPOSE 5432
